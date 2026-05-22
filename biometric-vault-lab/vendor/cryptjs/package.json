@@ -1,0 +1,19 @@
+{
+  "name": "@muulorigin/chromastash-sdk",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Steganographic secure backup SDK — encode any binary data into pixel-grid PNG slides",
+  "workspaces": [
+    "packages/chromastash-core",
+    "packages/chromastash-react"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:core": "npm run build -w packages/chromastash-core",
+    "build:react": "npm run build -w packages/chromastash-react",
+    "clean": "npm run clean --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "author": "Muulorigin",
+  "license": "MIT"
+}

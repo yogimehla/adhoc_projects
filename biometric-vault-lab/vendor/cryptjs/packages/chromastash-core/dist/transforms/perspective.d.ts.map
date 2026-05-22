@@ -1,0 +1,1 @@
+{"version":3,"file":"perspective.d.ts","sourceRoot":"","sources":["../../src/transforms/perspective.ts"],"names":[],"mappings":"AAQA,OAAO,KAAK,EAAE,YAAY,EAAE,MAAM,aAAa,CAAC;AAIhD;;;GAGG;AACH,wBAAgB,aAAa,CAAC,SAAS,EAAE,SAAS,GAAG,YAAY,GAAG,IAAI,CAkGvE;AAqDD;;;GAGG;AACH,wBAAgB,kBAAkB,CAChC,GAAG,EAAE,SAAS,EACd,OAAO,EAAE,YAAY,EACrB,SAAS,EAAE,MAAM,GAChB,SAAS,CA+BX"}

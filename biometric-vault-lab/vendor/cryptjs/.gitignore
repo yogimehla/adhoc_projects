@@ -1,0 +1,8 @@
+node_modules/
+*.tsbuildinfo
+.DS_Store
+
+# NOTE: dist/ is intentionally NOT ignored.
+# Consuming projects use file: dependencies that point to the compiled
+# dist/ folders. Committing dist/ means consumers don't need to build
+# the SDK themselves — they just git submodule update and npm install.

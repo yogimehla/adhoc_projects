@@ -1,0 +1,1 @@
+{"version":3,"file":"detector.js","sourceRoot":"","sources":["../../src/bridge/detector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AACH,MAAM,UAAU,WAAW;IACzB,OAAO,CACL,OAAO,MAAM,KAAK,WAAW;QAC7B,OAAO,MAAM,CAAC,eAAe,KAAK,WAAW;QAC7C,OAAO,MAAM,CAAC,eAAe,CAAC,IAAI,KAAK,UAAU,CAClD,CAAC;AACJ,CAAC"}

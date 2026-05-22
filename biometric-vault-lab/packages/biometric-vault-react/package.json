@@ -1,0 +1,40 @@
+{
+  "name": "@muulorigin/biometric-vault-react",
+  "version": "0.1.0",
+  "description": "React hooks and drop-in components for @muulorigin/biometric-vault-core.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "@muulorigin/biometric-vault-core": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "typescript": "~5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

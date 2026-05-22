@@ -1,0 +1,35 @@
+{
+  "name": "@muulorigin/biometric-vault-core",
+  "version": "0.1.0",
+  "description": "Biometric-only, frontend-only, offline-first local vault. Pure TypeScript core. Web Crypto only. Storage injected.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "@muulorigin/chromastash-core": "file:../../vendor/cryptjs/packages/chromastash-core"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

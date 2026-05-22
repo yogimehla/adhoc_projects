@@ -1,0 +1,29 @@
+{
+  "name": "@muulorigin/chromastash-core",
+  "version": "1.0.0",
+  "description": "Framework-agnostic steganographic encode/decode engine for binary-to-pixel-grid conversion",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.2"
+  },
+  "license": "MIT",
+  "author": "Muulorigin",
+  "keywords": ["steganography", "pixel-grid", "encode", "decode", "backup", "encryption"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

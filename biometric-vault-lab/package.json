@@ -1,0 +1,28 @@
+{
+  "name": "biometric-vault-lab",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Lab project: biometric-only, frontend-only, offline-first local vault. Sibling to @muulorigin/chromastash-sdk.",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/biometric-vault-core",
+    "packages/biometric-vault-react",
+    "packages/demo"
+  ],
+  "scripts": {
+    "build:core": "npm run build -w @muulorigin/biometric-vault-core",
+    "build:react": "npm run build -w @muulorigin/biometric-vault-react",
+    "build:packages": "npm run build:core && npm run build:react",
+    "dev": "npm run dev -w demo",
+    "build": "npm run build:packages && npm run build -w demo",
+    "preview": "npm run preview -w demo",
+    "typecheck": "tsc -b packages/biometric-vault-core packages/biometric-vault-react packages/demo --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
